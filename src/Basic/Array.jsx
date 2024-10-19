@@ -7,13 +7,13 @@ const Array = () => {
         { title: 'The Catcher in the Rye', author: 'J.D. Salinger' },
     ]
     return (
-        <>
+        <div className="flex justify-center py-10">
             <ul className="list-none">
                 {books.map(({ title, author }) => (
                     <li className="hover:list-disc hover:text-blue-500" key={title}>{title} - by {author}</li>
                 ))}
             </ul>
-        </>
+        </div>
     )
     //ES6 allows us to use the shorthand syntax for array methods
     //The map() method creates a new array with the results of calling a provided function on every element in the calling array.

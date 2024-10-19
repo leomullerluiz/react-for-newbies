@@ -1,6 +1,7 @@
 import './App.css'
 import Basic from './Basic/Basic.jsx'
 import Array from './Basic/Array.jsx'
+import Events from './Basic/Events.jsx'
 
 const App = () => {
 
@@ -9,6 +10,7 @@ const App = () => {
             {/*Component are aways wrapped in a div and written with the first letter in uppercase */}
             <Array />
             <Basic />
+            <Events />
         </div>
     )
 }

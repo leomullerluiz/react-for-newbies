@@ -24,26 +24,24 @@ const Basic = () => {
     // The 'sm:' prefix indicates responsive breakpoints, adjusting styles for small screens and above.
     // This approach allows for rapid development and consistent styling across the application.
     return (
-        <>
-            <div className="flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
-                <div className="-my-3 divide-y divide-gray-100 text-sm">
-                    <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                        <span className="font-medium text-gray-900">Name</span>
-                        <span className="text-gray-700 sm:col-span-2">{data.name}</span>
-                    </div>
+        <div className="justify-center py-10 flow-root rounded-lg border border-gray-100shadow-sm">
+            <div className="-my-3 divide-y divide-gray-100 text-sm">
+                <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                    <span className="font-medium text-gray-900">Name</span>
+                    <span className="text-gray-700 sm:col-span-2">{data.name}</span>
+                </div>
 
-                    <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                        <span className="font-medium text-gray-900">Cart</span>
-                        <span className="text-gray-700 sm:col-span-2">{data.cart.map((item, index) => <p key={index}>{item.product} - ${parseFloat(item.price.replace(/\D/g, ''))}</p>)}</span>
-                    </div>
+                <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                    <span className="font-medium text-gray-900">Cart</span>
+                    <span className="text-gray-700 sm:col-span-2">{data.cart.map((item, index) => <p key={index}>{item.product} - ${parseFloat(item.price.replace(/\D/g, ''))}</p>)}</span>
+                </div>
 
-                    <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-                        <span className="font-medium text-gray-900">Cart Total:</span>
-                        <span className="text-gray-700 sm:col-span-2">{total}</span>
-                    </div>
+                <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                    <span className="font-medium text-gray-900">Cart Total:</span>
+                    <span className="text-gray-700 sm:col-span-2">{total}</span>
                 </div>
             </div>
-        </>
+        </div>
     )
     //In JSX, we use curly braces to define a block of code that will be rendered
     //JSX is a syntax extension for JavaScript that allows us to write HTML-like syntax in JavaScript
