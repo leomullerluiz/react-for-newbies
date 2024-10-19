@@ -1,6 +1,4 @@
 //Basic of JSX
-import './App.css'
-
 //lets create a object called client to be our data source
 const client = {
     name: 'Leonardo',
@@ -26,7 +24,7 @@ const Basic = () => {
     // The 'sm:' prefix indicates responsive breakpoints, adjusting styles for small screens and above.
     // This approach allows for rapid development and consistent styling across the application.
     return (
-        <div className="container mx-auto px-8 py-8 sm:px-6 lg:px-8">
+        <>
             <div className="flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
                 <div className="-my-3 divide-y divide-gray-100 text-sm">
                     <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
@@ -45,7 +43,7 @@ const Basic = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
     //In JSX, we use curly braces to define a block of code that will be rendered
     //JSX is a syntax extension for JavaScript that allows us to write HTML-like syntax in JavaScript
