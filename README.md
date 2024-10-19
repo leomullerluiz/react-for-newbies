@@ -1,6 +1,7 @@
 # React for newbies
 Based on:
 - [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite)
+- [HyperUI](https://www.hyperui.dev/)
 
 ## Recommended IDE Setup
 > git clone https://github.com/leomullerluiz/react-for-newbies.git
