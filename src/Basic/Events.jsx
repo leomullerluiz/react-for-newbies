@@ -3,8 +3,11 @@ const Events = () => {
     //In React, we use the onClick event to attach a function to a button.
     //The onClick event is a common event that is used to handle user interactions, such as button clicks, form submissions, and more.
 
-    function handleClick() {
+    function handleButtonClick() {
         alert('Button clicked!')
+    }
+    function handleIconClick() {
+        alert('Icon clicked!')
     }
 
     return (
@@ -12,14 +15,22 @@ const Events = () => {
             <span className="inline-flex overflow-hidden rounded-md border bg-white shadow-sm">
                 <button
                     className="inline-block border-e px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:relative"
-                    onClick={handleClick}
+                    onClick={handleButtonClick}
                 >
+                    {/* 
+                        onClick={handleClick} . Let's break it down:
+
+                            1. onClick: This is an attribute commonly used in React to attach an event handler to an HTML element;
+                            2. {handleClick}: This is a JavaScript expression that evaluates to the function handleClick. In React, when you put curly braces {} around a variable or function, it tells React to evaluate that expression and insert the resulting value into the DOM;
+
+                        So, in essence, line 15 is saying: "Attach the handleClick function as the click event handler for this button."
+                    */}
                     Click me
                 </button>
 
                 <button
                     className="inline-block px-4 py-2 text-gray-700 hover:bg-gray-50 focus:relative"
-                    onClick={handleClick}
+                    onClick={handleIconClick}
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
