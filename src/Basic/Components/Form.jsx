@@ -1,3 +1,4 @@
+//A component don't need to be created in a external file, it can be created inline
 import Input from "./Input"
 import Button from "./Button"
 
