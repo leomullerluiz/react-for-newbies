@@ -5,6 +5,7 @@ import Events from './Basic/Events.jsx'
 import Form from './Basic/Components/Form.jsx'
 import Properties from './Basic/Properties.jsx'
 import Spread from './Basic/Spread.jsx'
+import UseStateHook from './Hooks/UseStateHook.jsx'
 
 const App = () => {
 
@@ -14,26 +15,29 @@ const App = () => {
 
             {/*Component are always wrapped in a div and written with the first letter in uppercase */}
 
-            <p>Basic of JSX:</p>
+            <b>Basic of JSX:</b>
             <Basic />
             <br />
-            <p>Arrays:</p>
+            <b>Arrays:</b>
             <Array />
             <br />
-            <p>Events:</p>
+            <b>Events:</b>
             <Events />
             <br />
-            <p>Components:</p>
+            <b>Components:</b>
             <Form />
             <br />
-            <p>Properties:</p>
+            <b>Properties:</b>
             <Properties text="Hello World!" />
             <Properties text="This is a Component rendering a property" text_color="green" />
             <Properties text="We can re-use components and pass data to them" text_color="red" />
             <br />
-            <p>Properties with rest and spread:</p>
+            <b>Properties with rest and spread:</b>
             <Spread text="We can pass more than one property" text_color="blue" rand_number={Math.floor(Math.random() * 100)} rest_of_props={"rest of props here"} />
-
+            <br />
+            <b>State:</b>
+            <UseStateHook />
+            <br />
 
         </div>
 
