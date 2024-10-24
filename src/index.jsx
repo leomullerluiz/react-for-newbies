@@ -8,9 +8,9 @@ import './index.css'
 
 //createRoot is a function from ReactDOM that creates a root element for React to render into
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-  <App />,
-  // </StrictMode>
+  <StrictMode>
+    <App />
+  </StrictMode>
   //StrictMode is a component that enables React to work with Concurrent Mode (also known as Async Mode)
   //It's a development tool that checks for common issues in a component's render method
   //If you see an error in your console, you'll know that the issue is probably because of a component that's out of sync with the browser's rendering
