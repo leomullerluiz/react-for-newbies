@@ -7,19 +7,19 @@ const POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2/pokemon/';
 
 const UseStateHook = () => {
     const [data, setData] = useState(null);
-    const [loading, setloading] = useState(false);
+    const [loading, setLoading] = useState(false);
     //the setLoading function is used to set the loading state to true ou false while the data is being fetched
 
     async function handleClick() {
         //async function is used to handle the click event
         //async means that the function will return a promise
-        setloading(true)
+        setLoading(true)
         const res = await fetch(
             `${POKEAPI_BASE_URL}${Math.floor(Math.random() * 151)}`,
         );
         const json = await res.json();
         //await is used to wait for the promise to resolve
-        setloading(false)
+        setLoading(false)
         setData(json)
     }
 
