@@ -6,6 +6,7 @@ import Form from './Basic/Components/Form.jsx'
 import Properties from './Basic/Properties.jsx'
 import Spread from './Basic/Spread.jsx'
 import UseStateHook from './Hooks/UseStateHook.jsx'
+//Here we are importing the components that we will use in the App.jsx
 
 const App = () => {
 
@@ -45,3 +46,4 @@ const App = () => {
 }
 
 export default App
+//Here we are exporting the App component to be used in the index.jsx

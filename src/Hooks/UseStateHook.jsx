@@ -11,6 +11,8 @@ const UseStateHook = () => {
     const [active, setActive] = useState(true);
     //The first argument is the value of the state, the second argument is the function that will be called when the state changes
     //useState(true) represents the initial value of the state
+    //Never modify state directly, use the setState method returned from useState
+    //By convention, the method used to update the state is called with the 'set' prefix 
     const [data, setData] = useState({ name: 'Leo Müller', age: 27 });
 
     const handleClick = () => {
