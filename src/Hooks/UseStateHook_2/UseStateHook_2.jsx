@@ -26,7 +26,7 @@ const UseStateHook = () => {
     return (
         <>
             <button onClick={() => handleClick()} className='inline-block rounded border px-12 py-3 text-sm font-medium bg-blue-500 text-white'>
-                Search Pokemon
+                Sort Pokemon
             </button>
             {loading && <Loader />}
             {!loading && data && <Pokemon data={data} />}
