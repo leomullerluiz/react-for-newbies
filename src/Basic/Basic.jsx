@@ -1,7 +1,7 @@
 //Basic of JSX
 //lets create a object called client to be our data source
 const client = {
-    name: 'Leonardo',
+    name: 'Leo Müller',
     cart: [
         { product: 'Smartphone', price: '$ 1000' },
         { product: 'Laptop', price: '$ 250' },
@@ -17,7 +17,7 @@ const Basic = () => {
     const data = client
     const total = data.cart.reduce((acc, item) => acc + parseFloat(item.price.replace(/\D/g, '')), 0)
     console.log(data)
-    //Output: Object { name: "Leonardo", cart: Array(6), active: true }
+    //Output: Object { name: "Leo Müller", cart: Array(6), active: true }
 
     // Tailwind CSS classes are used extensively throughout this component for responsive styling and layout management.
     // Classes like 'container', 'mx-auto', 'px-8', 'py-8', etc., provide utility-based styling without needing custom CSS.
