@@ -8,6 +8,7 @@ import Properties from './Basic/Properties.jsx'
 import Spread from './Basic/Spread.jsx'
 import UseStateHook from './Hooks/UseStateHook.jsx'
 import UseStateHook_2 from './Hooks/UseStateHook_2/UseStateHook_2.jsx'
+import UseEffectHook from './Hooks/UseEffectHook/UseEffectHook.jsx'
 
 const App = () => {
 
@@ -42,6 +43,9 @@ const App = () => {
             <hr className='my-8' />
             <b>State Part. 2:</b> <br />
             <UseStateHook_2 />
+            <hr className='my-8' />
+            <b>Use Effect</b><br />
+            <UseEffectHook />
             <hr className='my-8' />
 
         </div>
