@@ -9,6 +9,7 @@ import Spread from './Basic/Spread.jsx'
 import UseStateHook from './Hooks/UseStateHook.jsx'
 import UseStateHook_2 from './Hooks/UseStateHook_2/UseStateHook_2.jsx'
 import UseEffectHook from './Hooks/UseEffectHook/UseEffectHook.jsx'
+import UseEffectHook_2 from './Hooks/UseEffectHook/UseEffectHook_2.jsx'
 
 const App = () => {
 
@@ -47,7 +48,9 @@ const App = () => {
             <b>Use Effect</b><br />
             <UseEffectHook />
             <hr className='my-8' />
-
+            <b>Use Effect</b><br />
+            <UseEffectHook_2 />
+            <hr className='my-8' />
         </div>
 
     )
