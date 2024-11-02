@@ -10,6 +10,9 @@ import UseStateHook from './Hooks/UseStateHook.jsx'
 import UseStateHook_2 from './Hooks/UseStateHook_2/UseStateHook_2.jsx'
 import UseEffectHook from './Hooks/UseEffectHook/UseEffectHook.jsx'
 import UseEffectHook_2 from './Hooks/UseEffectHook/UseEffectHook_2.jsx'
+import UseRefHook from './Hooks/UseRefHook/UseRefHook.jsx'
+import UseMemoHook from './Hooks/UserMemoHook/UseMemoHook.jsx'
+
 
 const App = () => {
 
@@ -51,6 +54,13 @@ const App = () => {
             <b>Use Effect</b><br />
             <UseEffectHook_2 />
             <hr className='my-8' />
+            <b>UseRefHook</b><br />
+            <UseRefHook />
+            <hr className='my-8' />
+            <b>UseMemoHook</b>
+            <UseMemoHook />
+            <hr className='my-8' />
+
         </div>
 
     )
